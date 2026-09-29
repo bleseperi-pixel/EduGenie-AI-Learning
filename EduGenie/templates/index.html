@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGenie — AI Learning Assistant</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <span class="badge">AI LEARNING ASSISTANT</span>
+        <h1>EduGenie</h1>
+        <p>Ask, understand, practise, summarize, and build your learning path.</p>
+      </div>
+      <div class="spark">✦</div>
+    </header>
+
+    <section class="panel">
+      <label for="task">Choose a task</label>
+      <select id="task">
+        <option value="qa">Ask a Question</option>
+        <option value="explain">Explain a Topic</option>
+        <option value="quiz">Generate Quiz</option>
+        <option value="summarize">Summarize</option>
+        <option value="learn">Learning Path</option>
+      </select>
+
+      <label for="inputText">Your input</label>
+      <textarea id="inputText" placeholder="Example: Explain the Pythagoras theorem to a beginner."></textarea>
+
+      <button id="submitBtn" onclick="runTask()">Generate</button>
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="result-panel">
+      <div class="result-title">
+        <h2>Result</h2>
+        <button class="copy-btn" onclick="copyResult()">Copy</button>
+      </div>
+      <div id="result" class="result">Your answer will appear here.</div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

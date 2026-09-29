@@ -1,0 +1,146 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.app {
+  width: min(900px, 92%);
+  margin: 40px auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #182848, #4b6cb7);
+  color: white;
+  padding: 34px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(24,40,72,.18);
+}
+
+.badge {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  opacity: .85;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 64px);
+  margin: 8px 0;
+}
+
+.hero p {
+  margin: 0;
+  opacity: .9;
+}
+
+.spark { font-size: 64px; }
+
+.panel, .result-panel {
+  margin-top: 20px;
+  background: white;
+  padding: 26px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(23,32,51,.07);
+}
+
+label {
+  display: block;
+  margin: 12px 0 8px;
+  font-weight: 700;
+}
+
+select, textarea {
+  width: 100%;
+  border: 1px solid #dbe1eb;
+  border-radius: 12px;
+  padding: 13px;
+  font: inherit;
+  outline: none;
+}
+
+select:focus, textarea:focus {
+  border-color: #4b6cb7;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#submitBtn {
+  margin-top: 16px;
+  width: 100%;
+  background: #182848;
+  color: white;
+}
+
+#submitBtn:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+.result-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-title h2 { margin: 0; }
+
+.copy-btn {
+  background: #eef2ff;
+  color: #182848;
+}
+
+.result {
+  margin-top: 16px;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  min-height: 120px;
+}
+
+.quiz-card {
+  border: 1px solid #e2e6ef;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 12px 0;
+}
+
+.quiz-card h3 { margin-top: 0; }
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  text-align: left;
+  background: #f5f7fb;
+}
+
+.option.correct { background: #d9f7e5; }
+.option.wrong { background: #ffe0e0; }
+
+.status {
+  color: #5f6b80;
+  min-height: 20px;
+}
+
+@media (max-width: 600px) {
+  .app { margin: 18px auto; }
+  .hero { padding: 24px; }
+  .spark { display: none; }
+}

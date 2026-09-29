@@ -1,0 +1,7 @@
+# Full install = core + local LaMini-Flan-T5 model for the Explain feature.
+# (Skip the local model? use:  pip install -r requirements-lite.txt
+#  and set EXPLAIN_BACKEND=gemini in .env)
+-r requirements-lite.txt
+transformers>=4.40.0
+torch>=2.2.0
+sentencepiece>=0.2.0

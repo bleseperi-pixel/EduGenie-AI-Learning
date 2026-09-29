@@ -1,0 +1,11 @@
+fastapi>=0.116,<1
+uvicorn[standard]>=0.35,<1
+jinja2>=3.1,<4
+python-dotenv>=1.1,<2
+google-genai>=1.38,<2
+pydantic>=2.11,<3
+
+# Optional local concept-explanation model:
+# Uncomment these if ENABLE_LOCAL_EXPLAINER=true
+# torch>=2.2
+# transformers>=4.45,<5
