@@ -55,3 +55,4 @@ async def summarize(request: TextRequest):
 @app.post("/learn/recommendations")
 async def learning_recommendations(request: TextRequest):
     return {"result": get_learning_recommendations(request.text)}
+#changed
