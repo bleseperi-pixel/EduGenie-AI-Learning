@@ -57,4 +57,4 @@ async def learning_recommendations(request: TextRequest):
     return {"result": get_learning_recommendations(request.text)}
 #changed
 #finish
-#end
+
